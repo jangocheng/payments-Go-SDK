@@ -1,14 +1,14 @@
 # \B2cApi
 
-All URIs are relative to *http://localhost:8080/v1*
+All URIs are relative to *http://localhost:8081*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**B2cCreate**](B2cApi.md#B2cCreate) | **Post** /b2c/ | create b2c
+[**B2cCreate**](B2cApi.md#B2cCreate) | **Post** /v1/b2c/ | create b2c
 
 
 # **B2cCreate**
-> B2cCreate($authorization, $xAccount, $payload)
+> B2cCreate($payload)
 
 create b2c
 
@@ -19,8 +19,6 @@ creates a b2c payment request
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **string**|  | 
- **xAccount** | **int32**|  | 
  **payload** | [**B2CPayload1**](B2CPayload1.md)| Use this API to transact between an M-Pesa short code to a phone number registered on M-Pesa. | 
 
 ### Return type
